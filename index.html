@@ -4,35 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap example</title>
+    <title>Brandon Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
-    <div class="bg-dark p-5">
+<body class="text-light m-0 p-0" style="background-color:#011638; font-family: 'Inter', sans-serif;">
+    <div class="container text-light text-center" style="height: 80vh;" >
+        <div class="photo m-5 mb-4">
+            <img src="./Brandon bitmoji4.jpg" class="img-fluid" style="box-sizing: border-box; width: 300px; border-radius: 5em;" alt="">
+        </div>
+        <h5 class=""> -- Hello --</h5>
+        <h2 class="fw-bold"> I'm <span style="color: #D41DF2">Brandon</span> </h2>
+        <div class="container" style="font-family: 'Georgia', sans-serif; font-size: 20px;">
+            <p>
+                Born and raised in Tanzania and I am also First Generation. 
+                <br>
+                I study at St. Lawrence University, and my major is Computer Science.
+                <br>
+                Some of my hobbies include soccer, volleyball, dancing, singing, swimming, biking, watching YouTube and ofcourse ... sleeping
+                <br>
+                I love learning new things, working with and meeting new people.
+            </p>
+        </div>
         <div class="container">
-            <h1>Welcome to Mobile First Web Design</h1>
-            <div class="my4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab doloribus accusamus, porro necessitatibus quia fuga voluptatum, unde et, hic eius! Dolorem nemo numquam saepe animi! Quam eligendi, qui harum quo voluptatibus sint perferendis eveniet officia laborum blanditiis iusto assumenda ipsam velit, necessitatibus provident culpa numquam error! Dolor, error consequatur.</div>
+            <button class="btn btn-light btn-outline-success rounded text-center m-2" style="height: 40px;" id="github-el"
+            type="button" onclick="github()">
+                Click to find My Github username..
+            </button> 
+            <div class="justify-content-center text-center m-2">
+                <div class="text-primary fw-bold">Do you love sports?</div>
+                <div>
+                    <div class="col form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="col form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">No</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">I call it soccer</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">I call it football</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">I don't really care</label>
+                    </div>
+                </div>
+            </div>
+            
+            <form action="" >
+                <div class="text-primary fw-bold">Please enter your name and email, lets connect</div>
+                <div>
+                <input type="text" placeholder="Full name" class="rounded p-1">
+                </div>
+                <div>
+                <input type="email" placeholder="abcde@gmail.com" class="rounded p-1">
+                </div>
+                <div>
+                    <input type="text" placeholder="type anything..." class="rounded p-1">
+                </div>
+                <div class="m-1">
+                    <button type="submit" class="btn btn-light btn-outline-success rounded" >Submit</button>
+                </div>
+                
+            </form>
         </div>
-        <button class="btn btn-secondary">
-            <h2>Read More</h2>
-        </button>
     </div>
-    <div class="p-5">
-        <div class="container text-center">
-            <!-- <div class="text-center"> -->
-                <h2>Mobile and Web Development</h2>
-            <!-- </div> -->
-        </div>
-        <div class="row">
-        <div class="col-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis deleniti perferendis natus dolores ab eligendi exercitationem numquam a voluptatibus dicta commodi incidunt pariatur, mollitia error laudantium, quis ut, debitis aperiam.
-        </div>
-        <div class="col-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt voluptates minima quae maxime explicabo fugiat provident necessitatibus, error at, porro sed, in culpa reprehenderit et ea rerum eius quas ab!
-        </div>
-        </div>
-    <div class="bg-dark p-5">
-        <div class="container"></div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type='text/javascript'>
+    githubEl = document.getElementById("github-el")
+        function github(){
+            githubEl.textContent = "Bra11don";
+        }
+        </script>
 </body>
-</html>
