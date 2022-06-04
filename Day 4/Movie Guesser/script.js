@@ -77,7 +77,7 @@ function nextqn(){ //display the next question
     }
 }
 
-function lastpage(){
+function lastpage(){ //function to load the results page
     if(score>7){
         docs.innerHTML = "<hr>"+ "Congrats!!" + "<br>" + "You got " + score +" questions correct out of " + movies.length + "<br>"+ "Looks like your movie knowledge is on point!" + "<hr>";
         docs.style.background = 'green';
