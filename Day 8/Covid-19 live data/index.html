@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 live data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <div class="container">
+        <h1 class ="text-center mt-4">COVID-19 LIVE STATISTICS</h1>
+        <div class="card text-center p-4">
+            <table class="table table-hover">
+                <tr>
+                    <th>GLOBAL DATA</th>
+                </tr>
+                <tr>
+                    <th>Total cases</th>
+                    <th>Total recovered</th>
+                    <th>Total deaths</th>
+                    <!-- <th>Percentage recovered</th> -->
+                </tr>
+                <tr id="worldData">
+
+                </tr>
+            </table>
+        </div>
+        <form class="card text-center my-3 p-4" id="myForm">
+            <select class="form-select" id="selectCountry" onchange="countryInit()">
+                <option selected>Choose a country </option>
+                <!-- <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="selectCountry" onchange="countryInit()" /> -->
+            </select>
+        </form>
+        <div class="card text-center p-4 ">
+            <table class="table table-hover">
+                <tr>
+                    <th>COUNTRY DATA</th>
+                </tr>
+                <tr>
+                    <th>Total cases</th>
+                    <th>Total recovered</th>
+                    <th>Total deaths</th>
+                    <!-- <th>Percentage recovered</th> -->
+                </tr>
+                <tr id="countryData">
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
